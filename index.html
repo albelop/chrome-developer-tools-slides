@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/devtools.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,900|Raleway:400,600,700,900&display=swap"
+		rel="stylesheet">
+
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<style>
+		.flex-container-horizontal {
+			display: flex;
+			flex-direction: row;
+		}
+
+		.flex-container-horizontal>* {
+			flex: 1;
+		}
+	</style>
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1><span class="primary-color">Chrome</span> DevTools</h1>
+			</section>
+			<section>
+				<section class="grid-wrapper">
+					<h2>Elements panel</h2>
+					<img alt="Elements panel"
+						data-src="https://developers.google.com/web/tools/chrome-devtools/images/panels/elements.png">
+					<p class="content">View and change the DOM and CSS</p>
+				</section>
+				<section class="grid-wrapper">
+					<h2>Console panel</h2>
+					<img data-src="https://developers.google.com/web/tools/chrome-devtools/images/panels/console.png"
+						alt="Console panel">
+					<p class="content">View messages and run JavaScript from the Console.</p>
+				</section>
+				<section class="grid-wrapper">
+					<h2>Sources panel</h2>
+					<img data-src="https://developers.google.com/web/tools/chrome-devtools/images/panels/sources.png"
+						alt="Sources panel">
+					<p class="content">Debug JavaScript, persist changes made in DevTools across page reloads, save and
+						run snippets of
+						JS, and save changes that you make in DevTools to disk.</p>
+				</section>
+				<section class="grid-wrapper">
+					<h2>Network panel</h2>
+					<img data-src="https://developers.google.com/web/tools/chrome-devtools/images/panels/network.png"
+						alt="Network panel">
+					<p class="content">View and debug network activity.</p>
+				</section>
+				<section class="grid-wrapper">
+					<h2>Performance panel</h2>
+					<img data-src="https://developers.google.com/web/tools/chrome-devtools/images/panels/performance.png"
+						alt="Performance panel">
+					<p class="content">Find ways to improve load and runtime performance.</p>
+				</section>
+				<section class="grid-wrapper">
+					<h2>Memory panel</h2>
+					<img data-src="https://developers.google.com/web/tools/chrome-devtools/images/panels/memory.png"
+						alt="Memory panel">
+					<p class="content">Profile memory usage and track down leaks.</p>
+				</section>
+				<section class="grid-wrapper">
+					<h2>Application panel</h2>
+					<img data-src="https://developers.google.com/web/tools/chrome-devtools/images/panels/application.png"
+						alt="Application panel">
+					<p class="content">Inspect all resources that are loaded, including databases, local and
+						session storage, cookies, Application Cache, images, fonts, and stylesheets.</p>
+				</section>
+				<section class="grid-wrapper">
+					<h2>Security panel</h2>
+					<img data-src="https://developers.google.com/web/tools/chrome-devtools/images/panels/security.png"
+						alt="Security panel">
+					<p class="content">Debug mixed content issues, certificate problems, and more.</p>
+				</section>
+				<section class="grid-wrapper">
+					<h2>Device mode</h2>
+					<img data-src="https://developers.google.com/web/tools/chrome-devtools/images/device-mode.png"
+						alt="Device mode">
+					<p class="content">Simulate mobile devices.</p>
+				</section>
+
+
+
+			</section>
+		</div>
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			width: "100%",
+			height: "100%",
+			margin: 0,
+			minScale: 1,
+			maxScale: 1,
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true }
+			]
+		});
+	</script>
+</body>
+
+</html>

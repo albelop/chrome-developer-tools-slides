@@ -1,0 +1,57 @@
+// Base settings for all themes that can optionally be
+// overridden by the super-theme
+
+// Background of the presentation
+$backgroundColor: #263550;
+$primary-color: #c3e844;
+$secondary-color: #ffffff;
+$disabled-color: #666666;
+$error-color: #a81a1a;
+
+$border-radius: 1.5em;
+
+$shadow: 0px 8px 0px rgba(0, 0, 0, 0.16);
+$shadow-pressed: 0px 6px 0px rgba(0, 0, 0, 0.16);
+$inset-shadow: inset 0px 6px 0px rgba(0, 0, 0, 0.16);
+$focus-blur: 0px 0px 6px var($primary-color);
+$error-focus-blur: 0px 0px 6px var($error-color);
+
+// Primary/body text
+$mainFont: 'Raleway', sans-serif;;
+$mainFontSize: 2em;
+$mainColor: #eee;
+
+// Vertical spacing between blocks of text
+$blockMargin: 20px;
+
+// Headings
+$headingMargin: 0 0 $blockMargin 0;
+$headingFont: 'Montserrat', sans-serif;
+$headingColor: #eee;
+$headingLineHeight: 1.2;
+$headingLetterSpacing: normal;
+$headingTextTransform: normal;
+$headingTextShadow: 0px 10px 0px rgba(0, 0, 0, 0.26);
+$headingFontWeight: bold;
+$heading1TextShadow: $headingTextShadow;
+
+$heading1Size: 2.77em;
+$heading2Size: 1.31em;
+$heading3Size: 1.05em;
+$heading4Size: 1em;
+
+$codeFont: monospace;
+
+// Links and actions
+$linkColor: $primary-color;
+$linkColorHover: lighten($linkColor, 20%);
+
+// Text selection
+$selectionBackgroundColor: $primary-color;
+$selectionColor: #fff;
+
+// Generates the presentation background, can be overridden
+// to return a background image or gradient
+@mixin bodyBackground() {
+  background: $backgroundColor;
+}
