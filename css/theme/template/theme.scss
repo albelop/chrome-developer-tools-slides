@@ -56,6 +56,10 @@ body {
 	text-shadow: $headingTextShadow;
 
 	word-wrap: break-word;
+
+	span{
+		color: $primary-color;
+	}
 }
 
 .reveal h1 {font-size: $heading1Size; }

@@ -60,6 +60,13 @@ body {
   text-transform: normal;
   text-shadow: none;
   word-wrap: break-word; }
+  .reveal h1 span,
+  .reveal h2 span,
+  .reveal h3 span,
+  .reveal h4 span,
+  .reveal h5 span,
+  .reveal h6 span {
+    color: #c3e844; }
 
 .reveal h1 {
   font-size: 2.77em; }
