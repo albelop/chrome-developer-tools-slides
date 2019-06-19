@@ -133,6 +133,45 @@ The first character in the line defines the type of action you want to perform:
 
 ## Console
 
+### Overview
+
+### Logging
+- Types of message
+    - warning
+    - log
+    - error
+    - table
+    - group
+    - trace
+- Filter logged messages
+    - By log level
+    - By text
+    - By regex
+- Clear console
+    - Clear Console button
+    - clear()
+    - console.clear()
+    - Ctrl + L
+
+### Run JS
+https://developers.google.com/web/tools/chrome-devtools/console/images/playground.png
+
+### Utilities API
+
+- $_
+- $0-$4
+- $(selector) == document.querySelector
+- $$(selector) == document.querySelectorAll
+- $x(path)
+- copy()
+- dir()
+- monitor(fn) / unmonitor
+- monitorEvents(object [,events]) / unmonitorEvents
+
+### Live expressions
+
+## Network
+
 -----
 
 ## Sources:
