@@ -304,9 +304,12 @@ body {
         align-self: end;
         grid-area: content;
         margin-bottom: 60px; }
-      .reveal .slides .grid-slide.slide-text-image img {
+      .reveal .slides .grid-slide.slide-text-image figure {
         align-self: end;
-        grid-area: image; }
+        grid-area: image;
+        max-height: 100%;
+        width: 100%;
+        text-align: center; }
       .reveal .slides .grid-slide.slide-text-image .footer {
         text-align: center;
         font-style: italic;
