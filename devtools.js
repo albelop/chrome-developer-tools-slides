@@ -256,10 +256,10 @@ const loggingLog = () => {
 }
 
 const loggingWarn = () => {
-    console.warn('Hello world!');
+    console.warn('Uhh... a warning!');
 }
 const loggingError = () => {
-    console.error('Hello world!');
+    console.error('Bye bye world :(');
 }
 const loggingArray = () => {
     console.log(users);

@@ -342,10 +342,9 @@
 							<li class="fragment">
 								Basic logging
 								<ul>
-									<li><a href="#"
-											onclick="console.log('Hello world!')"><code>console.log(msg)</code></a></li>
-									<li><a href="#" onclick="console.warn('Uhh... a warning!')""><code>console.warning(msg)</code></a></li>
-									<li><a href="#" onclick="console.error('Bye bye world :(')"><code>console.error(msg)</code></a></li>
+									<li><a href="#" onclick="loggingLog()"><code>console.log(msg)</code></a></li>
+									<li><a href="#" onclick="loggingWarn()"><code>console.warning(msg)</code></a></li>
+									<li><a href="#" onclick="loggingError()"><code>console.error(msg)</code></a></li>
 									<li><a href="#" onclick="loggingTrace()"><code>console.trace(msg)</code></a></li>
 								</ul>
 							</li>
@@ -402,7 +401,9 @@
 					<h2>Run JavaScript</h2>
 					<figure></figure>
 					<div class="content">
-							The Console is a <b>REPL</b>, which stands for Read, Evaluate, Print, and Loop. It <b>reads</b> the JavaScript that you type into it, <b>evaluates</b> your code, <b>prints</b> out the result of your expression, and then <b>loops back</b> to the first step.
+						The Console is a <b>REPL</b>, which stands for Read, Evaluate, Print, and Loop. It <b>reads</b>
+						the JavaScript that you type into it, <b>evaluates</b> your code, <b>prints</b> out the result
+						of your expression, and then <b>loops back</b> to the first step.
 					</div>
 				</section>
 				<section class="grid-slide slide-text">
