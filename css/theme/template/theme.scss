@@ -16,6 +16,12 @@ body {
 	color: $mainColor;
 }
 
+
+@media (max-width: 1023px) {
+	.reveal {
+		font-size: $mainFontSize*0.8;
+	}
+}
 ::selection {
 	color: $selectionColor;
 	background: $selectionBackgroundColor;
@@ -174,7 +180,7 @@ body {
 
 .reveal code {
 	font-family: $codeFont;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	text-transform: none;
 	color: $primary-color;
 }
@@ -297,7 +303,7 @@ body {
  *********************************************/
 
 .reveal .controls {
-	color: $backgroundColor;
+	color: $mainColor;
 }
 
 

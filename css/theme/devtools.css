@@ -11,9 +11,13 @@ body {
 
 .reveal {
   font-family: "Raleway", sans-serif;
-  font-size: 2em;
+  font-size: 1.9em;
   font-weight: normal;
   color: #eee; }
+
+@media (max-width: 1023px) {
+  .reveal {
+    font-size: 1.52em; } }
 
 ::selection {
   color: #fff;
@@ -46,7 +50,7 @@ body {
   line-height: 1.2;
   letter-spacing: normal;
   text-transform: normal;
-  text-shadow: 0px 10px 0px rgba(0, 0, 0, 0.26);
+  text-shadow: -10px 9px 0px rgba(0, 0, 0, 0.26);
   word-wrap: break-word; }
 
 .reveal h1 {
@@ -62,7 +66,7 @@ body {
   font-size: 1em; }
 
 .reveal h1 {
-  text-shadow: 0px 10px 0px rgba(0, 0, 0, 0.26); }
+  text-shadow: -10px 9px 0px rgba(0, 0, 0, 0.26); }
 
 /*********************************************
  * OTHER
@@ -150,7 +154,7 @@ body {
 
 .reveal code {
   font-family: monospace;
-  font-size: 1.3em;
+  font-size: 1.2em;
   text-transform: none;
   color: #c3e844; }
 
@@ -247,7 +251,7 @@ body {
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: #263550; }
+  color: #eee; }
 
 /*********************************************
  * PROGRESS BAR
@@ -268,18 +272,45 @@ body {
   .backgrounds {
     background-color: #263550; } }
 
-.reveal .slides::before {
+body::before {
   content: "";
   display: block;
-  position: absolute;
-  top: -150%;
-  right: -150%;
+  position: fixed;
+  top: 0;
+  right: -100%;
   width: 100%;
-  height: 300%;
-  background: #fff;
-  box-shadow: inset 0 0 0 60px #c3e844, inset 0 0 0 80px #91ac32, 0 0 0 20px rgba(0, 0, 0, 0.26);
+  height: 100%;
+  background: #c3e844;
+  box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.26);
   z-index: -900;
-  transform: skew(-13deg) translateX(-43%) scale(1.5); }
+  transform: skew(13deg) scale(1.2); }
+
+body::after {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.26);
+  z-index: 900;
+  transform: skew(13deg) scale(1); }
+
+@media (max-width: 1023px) {
+  .reveal .slides .grid-slide.slide-text-image {
+    grid-template-areas: "header" "image" "content" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 12vmin 2fr 1fr;
+    grid-column-gap: 0; } }
+
+@media (min-width: 1024px) {
+  .reveal .slides .grid-slide.slide-text-image {
+    grid-template-areas: "header header" "content image" ". footer";
+    grid-template-columns: 35% auto;
+    grid-template-rows: 12vmin 1fr auto;
+    grid-column-gap: 2vmin; } }
 
 .reveal .primary-color {
   color: #c3e844; }
@@ -291,32 +322,44 @@ body {
     display: grid !important;
     height: 100%;
     padding: 6vmin; }
-    .reveal .slides .grid-slide.slide-text-image {
-      grid-template-areas: "header header" "content image" ". footer";
-      grid-template-columns: 35% auto;
-      grid-template-rows: 12vmin 1fr auto;
-      grid-column-gap: 2vmin; }
-      .reveal .slides .grid-slide.slide-text-image h2,
-      .reveal .slides .grid-slide.slide-text-image h3,
-      .reveal .slides .grid-slide.slide-text-image h4 {
-        grid-area: header; }
-      .reveal .slides .grid-slide.slide-text-image .content {
+    .reveal .slides .grid-slide h1,
+    .reveal .slides .grid-slide h2,
+    .reveal .slides .grid-slide h3,
+    .reveal .slides .grid-slide h4 {
+      grid-area: header;
+      padding-right: 16%; }
+    .reveal .slides .grid-slide.slide-text {
+      grid-template-areas: "header" "content" "footer";
+      grid-template-columns: auto;
+      grid-template-rows: 12vmin 1fr auto; }
+      .reveal .slides .grid-slide.slide-text .content {
         align-self: end;
         grid-area: content;
         margin-bottom: 60px; }
-      .reveal .slides .grid-slide.slide-text-image figure {
-        align-self: end;
-        grid-area: image;
-        max-height: 100%;
-        width: 100%;
-        text-align: center; }
-      .reveal .slides .grid-slide.slide-text-image .footer {
+      .reveal .slides .grid-slide.slide-text .footer {
         text-align: center;
         font-style: italic;
         font-size: 0.8em;
         grid-area: footer; }
+    .reveal .slides .grid-slide.slide-text-image .content {
+      align-self: end;
+      grid-area: content;
+      margin-bottom: 60px; }
+    .reveal .slides .grid-slide.slide-text-image figure {
+      align-self: end;
+      grid-area: image;
+      max-height: 100%;
+      width: 100%;
+      text-align: center; }
+    .reveal .slides .grid-slide.slide-text-image .footer {
+      text-align: center;
+      font-style: italic;
+      font-size: 0.8em;
+      grid-area: footer; }
     .reveal .slides .grid-slide.slide-chapter-title {
       align-items: center; }
+      .reveal .slides .grid-slide.slide-chapter-title h1 {
+        padding: 0; }
     .reveal .slides .grid-slide.slide-section-title {
       align-items: start;
       align-content: space-between; }

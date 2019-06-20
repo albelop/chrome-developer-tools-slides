@@ -18,7 +18,7 @@ $error-focus-blur: 0px 0px 6px var($error-color);
 
 // Primary/body text
 $mainFont: 'Raleway', sans-serif;;
-$mainFontSize: 2em;
+$mainFontSize: 1.9em;
 $mainColor: #eee;
 
 // Vertical spacing between blocks of text
@@ -31,7 +31,7 @@ $headingColor: #eee;
 $headingLineHeight: 1.2;
 $headingLetterSpacing: normal;
 $headingTextTransform: normal;
-$headingTextShadow: 0px 10px 0px rgba(0, 0, 0, 0.26);
+$headingTextShadow: -10px 9px 0px rgba(0, 0, 0, 0.26);;
 $headingFontWeight: bold;
 $heading1TextShadow: $headingTextShadow;
 
