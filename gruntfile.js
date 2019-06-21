@@ -41,7 +41,7 @@ module.exports = grunt => {
 		sass: {
 			options: {
 				implementation: sass,
-				sourceMap: false
+				sourceMap: true
 			},
 			core: {
 				src: 'css/reveal.scss',
