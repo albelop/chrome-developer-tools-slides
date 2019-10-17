@@ -293,3 +293,17 @@ const loggingGroup = function () {
 const loggingStyle = () => {
     console.log('%cHello world!\u{1F44B} \u{1F30D}', 'font-size:4em; color: red; background:yellow; padding: 8px;border-radius:10px; border: solid 6px red; text-align: center');
 }
+
+const copyToClipboard = str => {
+    const el = document.createElement('textarea');
+    el.value = str;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+};
+
+const lastResult = () => copyToClipboard('users.map(e => (e.name)).filter(e=> e.includes("r"))')
+const qSelector = () => copyToClipboard('$("#document-query-selector")')
+const qSelectorAll = () => copyToClipboard('$$("#utilities-api-list .fragment")')
+const monitorFn = () => copyToClipboard('function mySumFn(x, y) { return (x + 2 *y);}\nmonitor(mySumFn)')
