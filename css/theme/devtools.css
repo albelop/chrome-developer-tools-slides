@@ -328,6 +328,8 @@ body::after {
     .reveal .slides .grid-slide h4 {
       grid-area: header;
       padding-right: 16%; }
+    .reveal .slides .grid-slide header {
+      grid-area: header; }
     .reveal .slides .grid-slide.slide-text {
       grid-template-areas: "header" "content" "footer";
       grid-template-columns: auto;
@@ -363,3 +365,5 @@ body::after {
     .reveal .slides .grid-slide.slide-section-title {
       align-items: start;
       align-content: space-between; }
+
+/*# sourceMappingURL=devtools.css.map */

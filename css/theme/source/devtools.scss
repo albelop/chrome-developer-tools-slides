@@ -89,6 +89,10 @@ body::after {
         padding-right: 16%;
       }
 
+      header{
+        grid-area: header;
+      }
+
       &.slide-text {
         grid-template-areas:
           "header"
