@@ -412,14 +412,14 @@
 					<div class="content">
 						<ul id="utilities-api-list">
 							<li class="fragment">Last result: <a href="#" onclick="lastResult()"><code>$_</code></a></li>
-							<li class="fragment">Last selected elements: <code>$1 - $4</code></li>
+							<li class="fragment">Last selected elements: <code>$0 - $4</code></li>
 							<li class="fragment" id="document-query-selector">document.querySelector: <a href="#" onclick="qSelector()"><code>$(selector)</code></a></li>
 							<li class="fragment">document.querySelectorAll: <a href="#" onclick="qSelectorAll()"><code>$$(selector)</code></a></li>
 							<li class="fragment">Select Xpath: <code>$x(path)</code></li>
 							<li class="fragment">Copy to clipboard: <code>copy()</code></li>
 							<li class="fragment">Log element as object: <code>dir()</code></li>
 							<li class="fragment">Monitor function: <a href="#" onclick="monitorFn()"><code>monitor(fn)</code></a> / unmonitor</li>
-							<li class="fragment">Monitor event: <code>monitorEvents(obj, [, events])</code> / unmonitor
+							<li class="fragment">Monitor event: <a href="#" onclick="monitorEventsFn()" id="monitor-events-link"><code>monitorEvents(obj, [, events])</code></a> / unmonitor
 							</li>
 						</ul>
 					</div>

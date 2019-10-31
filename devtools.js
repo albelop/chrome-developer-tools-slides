@@ -307,3 +307,4 @@ const lastResult = () => copyToClipboard('users.map(e => (e.name)).filter(e=> e.
 const qSelector = () => copyToClipboard('$("#document-query-selector")')
 const qSelectorAll = () => copyToClipboard('$$("#utilities-api-list .fragment")')
 const monitorFn = () => copyToClipboard('function mySumFn(x, y) { return (x + 2 *y);}\nmonitor(mySumFn)')
+const monitorEventsFn = () => copyToClipboard('monitorEvents($("#monitor-events-link"), "click")')
