@@ -147,13 +147,13 @@ body {
   margin: 20px auto;
   text-align: left;
   font-size: 0.55em;
-  font-family: monospace;
+  font-family: "Courier New", Courier, monospace;
   line-height: 1.2em;
   word-wrap: break-word;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15); }
 
 .reveal code {
-  font-family: monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 1.2em;
   text-transform: none;
   color: #c3e844; }
@@ -300,14 +300,19 @@ body::after {
 
 @media (max-width: 1023px) {
   .reveal .slides .grid-slide.slide-text-image {
-    grid-template-areas: "header" "image" "content" "footer";
+    grid-template-areas: "header"
+ "image"
+ "content"
+ "footer";
     grid-template-columns: auto;
     grid-template-rows: 12vmin 2fr 1fr;
     grid-column-gap: 0; } }
 
 @media (min-width: 1024px) {
   .reveal .slides .grid-slide.slide-text-image {
-    grid-template-areas: "header header" "content image" ". footer";
+    grid-template-areas: "header header"
+ "content image"
+ ". footer";
     grid-template-columns: 35% auto;
     grid-template-rows: 12vmin 1fr auto;
     grid-column-gap: 2vmin; } }
@@ -331,7 +336,9 @@ body::after {
     .reveal .slides .grid-slide header {
       grid-area: header; }
     .reveal .slides .grid-slide.slide-text {
-      grid-template-areas: "header" "content" "footer";
+      grid-template-areas: "header"
+ "content"
+ "footer";
       grid-template-columns: auto;
       grid-template-rows: 12vmin 1fr auto; }
       .reveal .slides .grid-slide.slide-text .content {
