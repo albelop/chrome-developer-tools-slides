@@ -282,8 +282,8 @@ const loggingGroup = function () {
     console.log('Home');
     console.groupCollapsed(labelItem);
     console.log('Banking');
-    console.log('Digital')
-    console.log('Internal')
+    console.log('Digital');
+    console.log('Internal');
     console.groupEnd(labelItem);
     console.log('About us');
     console.log('Contact');
@@ -308,3 +308,12 @@ const qSelector = () => copyToClipboard('$("#document-query-selector")')
 const qSelectorAll = () => copyToClipboard('$$("#utilities-api-list .fragment")')
 const monitorFn = () => copyToClipboard('function mySumFn(x, y) { return (x + 2 *y);}\nmonitor(mySumFn)')
 const monitorEventsFn = () => copyToClipboard('monitorEvents($("#monitor-events-link"), "click")')
+
+const breakpoints = () => {
+    debugger;
+    const addresses = users.map(user => {
+        const { address } = user;
+        return `${address.street}, ${address.zipcode} ${address.city.toUpperCase()}.`
+    })
+    return addresses;
+}
