@@ -251,6 +251,10 @@ const users = [
 
 document.querySelectorAll('a[href="#"]').forEach(link => link.addEventListener('click', (e) => { e.preventDefault(); }))
 
+const designModeToggle = () => {
+    document.designMode = document.designMode === 'off' ? 'on' : 'off';
+}
+
 const loggingLog = () => {
     console.log('Hello world!');
 }
