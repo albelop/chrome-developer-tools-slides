@@ -238,6 +238,19 @@
 					</div>
 
 				</section>
+				<section class="grid-slide slide-text-image">
+					<h2>Useful tools</h2>
+					figure>
+					<img data-src="https://developers.google.com/web/tools/chrome-devtools/command-menu/imgs/actions.png"
+						alt="Opening the command menu">
+					</figure>
+					<div class="content">
+						<ul>
+							<li class="fragment">Screenshots</li>
+							<li class="fragment">Dark mode </li>
+						</ul>
+					</div>
+				</section>
 			</section>
 
 			<section>
@@ -274,7 +287,8 @@
 							<li class="fragment">Double click on the content, tag, attribute value or attribute name to
 								modify</li>
 							<li class="fragment">Edit as HTML</li>
-							<li class="fragment"><a href="#" onclick="designModeToggle()"><code>document.designMode = 'on'</code></a></li>
+							<li class="fragment"><a href="#"
+									onclick="designModeToggle()"><code>document.designMode = 'on'</code></a></li>
 							<li class="fragment">Remove nodes</li>
 							<li class="fragment">Reorder DOM nodes</li>
 							<li class="fragment">Force <a href="#">state</a></li>
@@ -423,15 +437,20 @@
 
 					<div class="content">
 						<ul id="utilities-api-list">
-							<li class="fragment">Last result: <a href="#" onclick="lastResult()"><code>$_</code></a></li>
+							<li class="fragment">Last result: <a href="#" onclick="lastResult()"><code>$_</code></a>
+							</li>
 							<li class="fragment">Last selected elements: <code>$0 - $4</code></li>
-							<li class="fragment" id="document-query-selector">document.querySelector: <a href="#" onclick="qSelector()"><code>$(selector)</code></a></li>
-							<li class="fragment">document.querySelectorAll: <a href="#" onclick="qSelectorAll()"><code>$$(selector)</code></a></li>
+							<li class="fragment" id="document-query-selector">document.querySelector: <a href="#"
+									onclick="qSelector()"><code>$(selector)</code></a></li>
+							<li class="fragment">document.querySelectorAll: <a href="#"
+									onclick="qSelectorAll()"><code>$$(selector)</code></a></li>
 							<li class="fragment">Select Xpath: <code>$x(path)</code></li>
 							<li class="fragment">Copy to clipboard: <code>copy()</code></li>
 							<li class="fragment">Log element as object: <code>dir()</code></li>
-							<li class="fragment">Monitor function: <a href="#" onclick="monitorFn()"><code>monitor(fn)</code></a> / unmonitor</li>
-							<li class="fragment">Monitor event: <a href="#" onclick="monitorEventsFn()" id="monitor-events-link"><code>monitorEvents(obj, [, events])</code></a> / unmonitor
+							<li class="fragment">Monitor function: <a href="#"
+									onclick="monitorFn()"><code>monitor(fn)</code></a> / unmonitor</li>
+							<li class="fragment">Monitor event: <a href="#" onclick="monitorEventsFn()"
+									id="monitor-events-link"><code>monitorEvents(obj, [, events])</code></a> / unmonitor
 							</li>
 						</ul>
 					</div>
@@ -452,7 +471,7 @@
 					<div class="content">
 						<ul>
 							<li class="fragment">
-								
+
 								<a href="#" onclick="breakpoints()"><code>debugger</code></a>
 							</li>
 							<li class="fragment">
@@ -504,23 +523,11 @@
 							<li class="fragment">
 								Blackbox script
 							</li>
-							<li class="fragment">
+							<li class="fragmentya">
 								Watch variables
 							</li>
 						</ul>
 					</div>
-				</section>
-			</section>
-			<section>
-				<section class="grid-slide slide-section-title">
-					<header>
-						<h1>Sources panel:</h1>
-						<h2>Workspaces</h2>
-					</header>
-					<div>Save changes that you make within DevTools to source code that's stored on your computer.</div>
-				</section>
-				<section>
-					
 				</section>
 			</section>
 			<section>
@@ -533,7 +540,31 @@
 						breakpoints...</div>
 				</section>
 			</section>
-		</div>
+			<section>
+				<section class="grid-slide slide-section-title">
+					<header>
+						<h1>Sources panel:</h1>
+						<h2>Local overrides</h2>
+					</header>
+					<div>Make changes in DevTools, and keep those changes across page loads.</div>
+				</section>
+				<section>
+
+				</section>
+			</section>
+			<section>
+				<section class="grid-slide slide-section-title">
+					<header>
+						<h1>Sources panel:</h1>
+						<h2>Workspaces</h2>
+					</header>
+					<div>Save changes that you make within DevTools to source code that's stored on your computer.</div>
+				</section>
+				<section>
+
+				</section>
+			</section>
+	</div>
 	</div>
 
 	<script src="js/reveal.js"></script>
