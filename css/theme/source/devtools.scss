@@ -89,7 +89,7 @@ body::after {
         padding-right: 16%;
       }
 
-      header{
+      header {
         grid-area: header;
       }
 
@@ -138,14 +138,21 @@ body::after {
 
       &.slide-chapter-title {
         align-items: center;
-        h1{
+        h1 {
           padding: 0;
         }
       }
 
       &.slide-section-title {
-        align-items: start;
-        align-content: space-between;
+        grid-template-areas:
+          "header"
+          "content"
+          "footer";
+        grid-template-columns: auto;
+        grid-template-rows: 12vmin 1fr auto;
+        & > div {
+          grid-area: footer;
+        }
       }
     }
   }
