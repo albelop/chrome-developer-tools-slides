@@ -321,3 +321,28 @@ const breakpoints = () => {
     })
     return addresses;
 }
+
+const xhrCall = () => {
+    fetch('https://pokeapi.co/api/v2/pokemon/pikachu/');
+    fetch('https://pokeapi.co/api/v2/ability/3/');
+}
+
+const exceptions = () => {
+    const value = 6;
+    value = 8;
+}
+
+const caughtExceptions = () => {
+    try{
+        const label = 'my String';
+        label = "new my string";
+    }catch{
+        console.warn('label not defined')
+    }
+}
+
+const randomSum = () => {
+    const a = Math.random() * 20;
+    const b = Math.random() * 100;
+    console.log(`Sum is ${a + b}`);
+}

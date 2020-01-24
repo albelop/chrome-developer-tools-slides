@@ -41,7 +41,7 @@
 
 <body>
 	<div class="reveal">
-		<he class="slides">
+		<header class="slides">
 
 			<section class="grid-slide slide-chapter-title">
 				<header>
@@ -241,8 +241,8 @@
 				<section class="grid-slide slide-text-image">
 					<h2>Useful tools</h2>
 					<figure>
-					<img data-src="https://developers.google.com/web/tools/chrome-devtools/customize/images/darktheme.png"
-						alt="Opening the command menu">
+						<img data-src="https://developers.google.com/web/tools/chrome-devtools/customize/images/darktheme.png"
+							alt="Opening the command menu">
 					</figure>
 					<div class="content">
 						<ul>
@@ -307,7 +307,7 @@
 						<h2>Styles</h2>
 					</header>
 					<div>
-						Traverse, edit and analyze the DOM tree of your page.
+						Inspect and edit your CSS styles and animations on the fly.
 					</div>
 				</section>
 				<section class="grid-slide slide-text-image">
@@ -462,7 +462,8 @@
 						<h1>Sources panel:</h1>
 						<h2>Debugging JavaScript</h2>
 					</header>
-					<div>Create custom pieces of code that can be reused anywhere.</div>
+					<div>Pause and debug your Javascript code, watch variable changes, manage listeners and
+						breakpoints...</div>
 				</section>
 				<section class="grid-slide slide-text">
 					<h2>Breakpoints</h2>
@@ -470,29 +471,37 @@
 					<div class="content">
 						<ul>
 							<li class="fragment">
-
 								<a href="#" onclick="breakpoints()"><code>debugger</code></a>
+							</li>
+							<li class="fragment">
+								Never pause here
 							</li>
 							<li class="fragment">
 								line-of-code breakpoint
 							</li>
 							<li class="fragment">
-								Event listener
+								Conditional line-of-code
 							</li>
 							<li class="fragment">
-								Conditional line-of-code
+								Logpoint
+							</li>
+							<li class="fragment">
+								Event listener
 							</li>
 							<li class="fragment">
 								DOM
 							</li>
 							<li class="fragment">
-								XHR
+								<a href="#" onclick="xhrCall()">XHR</a>
 							</li>
 							<li class="fragment">
-								Exceptions
+								<a href="#" onclick="exceptions()">Exceptions</a>
 							</li>
 							<li class="fragment">
-								Functions
+								<a href="#" onclick="caughtExceptions()">Caught exceptions</a>
+							</li>
+							<li class="fragment">
+								<a href="#" onclick="randomSum()">Functions</a>
 							</li>
 						</ul>
 					</div>
@@ -525,18 +534,21 @@
 							<li class="fragment">
 								Watch variables
 							</li>
+							<li class="fragment">
+								Live expressions
+							</li>
 						</ul>
 					</div>
 				</section>
 			</section>
 			<section>
 				<section class="grid-slide slide-section-title">
-					<div>
+					<header>
 						<h1>Sources panel:</h1>
 						<h2>Snippets</h2>
-					</div>
-					<div>Pause and debug your Javascript code, watch variable changes, manage listeners and
-						breakpoints...</div>
+					</header>
+					<div>Create custom pieces of code that can be reused anywhere.</div>
+
 				</section>
 			</section>
 			<section>
@@ -546,9 +558,6 @@
 						<h2>Local overrides</h2>
 					</header>
 					<div>Make changes in DevTools, and keep those changes across page loads.</div>
-				</section>
-				<section>
-
 				</section>
 			</section>
 			<section>
