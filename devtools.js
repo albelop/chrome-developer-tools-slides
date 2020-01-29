@@ -256,6 +256,7 @@ document.querySelectorAll('a[href="#"]').forEach(link =>
 
 const designModeToggle = () => {
   document.designMode = document.designMode === "off" ? "on" : "off";
+  console.log(`Design mode ${document.designMode.toUpperCase()}`)
 };
 
 const loggingLog = () => {

@@ -298,6 +298,23 @@ body::after {
   z-index: 900;
   transform: skew(13deg) scale(1); }
 
+#animation-wrapper .ball {
+  display: block;
+  background-color: red;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  transition: border, border-radius, transform;
+  transition-duration: 1s, 2s, 0.8s;
+  transition-timing-function: ease, ease-in-out, ease-out;
+  border: solid 3px #fff;
+  transform: translateY(150px) translateX(0px); }
+
+#animation-wrapper:hover .ball {
+  border-radius: 15%;
+  border: solid 8px #00ff73;
+  transform: translateY(0px) translateX(250px); }
+
 @media (max-width: 1023px) {
   .reveal .slides .grid-slide.slide-text-image {
     grid-template-areas: "header" "image" "content" "footer";

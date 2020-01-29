@@ -214,6 +214,10 @@
                   <th>Action</th>
                 </tr>
                 <tr>
+                  <td align="center">></td>
+                  <td>Run command</td>
+                </tr>
+                <tr>
                   <td align="center">...</td>
                   <td>Open file</td>
                 </tr>
@@ -228,10 +232,6 @@
                 <tr>
                   <td align="center">!</td>
                   <td>Run snippet</td>
-                </tr>
-                <tr>
-                  <td align="center">></td>
-                  <td>Run command</td>
                 </tr>
               </table>
             </div>
@@ -290,8 +290,14 @@
                 <li class="fragment">Reorder DOM nodes</li>
                 <li class="fragment">Force <a href="#">state</a></li>
                 <li class="fragment">Hide element: <code>H</code></li>
-                <li class="fragment">More: Console</li>
-                <li class="fragment">More: Break on DOM changes</li>
+                <li class="fragment">
+                  More:
+                  <ul>
+                    <li>Break on DOM Changes</li>
+                    <li>Console Panel</li>
+                    <li>Quick source</li>
+                  </ul>
+                </li>
               </ul>
             </div>
           </section>
@@ -300,7 +306,7 @@
           <section class="grid-slide slide-section-title">
             <header>
               <h1>Elements panel:</h1>
-              <h2>Styles</h2>
+              <h2><b>CSS</b> styles</h2>
             </header>
             <div>Inspect and edit your CSS styles and animations on the fly.</div>
           </section>
@@ -329,8 +335,11 @@
               </ul>
             </div>
           </section>
-          <section class="grid-slide slide-text">
+          <section class="grid-slide slide-text-image">
             <h2>Animations</h2>
+            <figure id="animation-wrapper">
+              <div class="ball"></div>
+            </figure>
             <div class="content">
               <ul>
                 <li class="fragment">Inspect</li>
@@ -339,6 +348,7 @@
             </div>
           </section>
         </section>
+
         <section>
           <section class="grid-slide slide-section-title">
             <header>
@@ -457,11 +467,12 @@
             </div>
           </section>
         </section>
+
         <section>
           <section class="grid-slide slide-section-title">
             <header>
               <h1>Sources panel:</h1>
-              <h2>Debugging JavaScript</h2>
+              <h2>Debugging <b>JavaScript</b></h2>
             </header>
             <div>Pause and debug your Javascript code, watch variable changes, manage listeners and breakpoints...</div>
           </section>
@@ -504,38 +515,53 @@
             </div>
           </section>
         </section>
+
+
+        
         <section>
           <section class="grid-slide slide-section-title">
             <header>
               <h1>Sources panel:</h1>
-              <h2>Snippets</h2>
+              <h2><b>Persisting</b> changes</h2>
             </header>
-            <div>Create custom pieces of code that can be reused anywhere.</div>
+            <div>Save the changes you make in DevTools to you local drive.</div>
           </section>
           <section class="grid-slide slide-text-image">
-            <h2>Manage snippets</h2>
+            <h2>Snippets</h2>
+
             <div class="content">
+              
+              
+              <p>A <b>snippet</b> is a custom piece of code that can be reused anywhere.</p>
               <ul>
-                <li class="fragment">Create new snippet</li>
-                <li class="fragment">Execute</li>
-                <li class="fragment">Save</li>
-                <li class="fragment">Recommendation: wrap with IIFE</li>
-                <li class="fragment">Sandbox</li>
+                <li class="fragment">
+                  Manage snippets:
+                  <ul>
+                    <li>Create new snippet</li>
+                    <li>Execute</li>
+                    <li>Save</li>
+                  </ul>
+                </li>
+                <li class="fragment">
+                  Tips:
+                  <ul>
+                    <li>Wrap with IIFE</li>
+                    <li>Use as a sandbox</li>
+                  </ul>
+                </li>
               </ul>
             </div>
           </section>
-        </section>
-        <section>
-          <section class="grid-slide slide-section-title">
+        
+          <section class="grid-slide slide-text">
             <header>
               <h1>Sources panel:</h1>
               <h2>Local overrides</h2>
             </header>
             <div>Make changes in DevTools, and keep those changes across page loads.</div>
           </section>
-        </section>
-        <section>
-          <section class="grid-slide slide-section-title">
+
+          <section class="grid-slide slide-text">
             <header>
               <h1>Sources panel:</h1>
               <h2>Workspaces</h2>
@@ -543,9 +569,12 @@
             <div>Save changes that you make within DevTools to source code that's stored on your computer.</div>
           </section>
         </section>
+
+
+
         <section>
           <section class="grid-slide slide-section-title">
-            <header><h1>Network panel:</h1></header>
+            <header><h1>Network panel</h1></header>
           </section>
           <section class="grid-slide slide-text">
             <h2>Network</h2>
@@ -583,6 +612,11 @@
                 <li>
                   <a href="https://developers.google.com/web/tools/chrome-devtools/command-menu/" target="_blank"
                     >Chrome DevTools Documentation</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=kobvF5cs6xY&list=PLNYkxOF6rcIBDSojZWBv4QJNoT4GNYzQD" target="_blank"
+                    >What´s New in DevTools</a
                   >
                 </li>
                 <li>
