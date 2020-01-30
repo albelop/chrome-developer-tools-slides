@@ -371,6 +371,10 @@ body::after {
       height: 100%;
       width: 100%;
       text-align: center; }
+      .reveal .slides .grid-slide.slide-text-image figure img.with-shadow {
+        box-shadow: 14px 13px 10px 11px rgba(0, 0, 0, 0.5); }
+      .reveal .slides .grid-slide.slide-text-image figure img:hover {
+        border: dashed 3px yellow; }
     .reveal .slides .grid-slide.slide-text-image .footer {
       text-align: center;
       font-style: italic;
